@@ -30,10 +30,10 @@ dependencies {
 	implementation("org.projectlombok:lombok-maven:1.16.20.0")
 	implementation ("org.springframework.boot:spring-boot-starter-data-jpa") //dataJPA - автоматический генерирует SQL запросы для базы данных ) мост запросов из JAVA в SQL
 	runtimeOnly ("org.postgresql:postgresql") //библиотека postgresSQL - помогает подключится к базе данных на ПК
-
-
-
-}
+	implementation ("org.springframework.boot:spring-boot-starter-kafka")
+	testImplementation ("org.springframework.boot:spring-boot-starter-kafka-test")
+	testRuntimeOnly ("org.junit.platform:junit-platform-launcher")
+	}
 
 tasks.withType<Test> {
 	useJUnitPlatform()
