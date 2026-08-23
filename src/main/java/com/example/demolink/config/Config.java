@@ -8,6 +8,7 @@ public class Config {
     @Bean("getText")
     public String getText() {
         System.out.println("Ветка Main");
+        System.out.println("Ветка Main_1");
         return "Hello world, kak dela? ";
     }
 
