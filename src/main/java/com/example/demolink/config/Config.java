@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Bean;
 public class Config {
     @Bean("getText")
     public String getText() {
+        System.out.println("Ветка Main");
         return "Hello world, kak dela? ";
     }
 
