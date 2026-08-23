@@ -10,6 +10,7 @@ public class MessageConsumer {
     public void receiveMessage(String message) {
         System.out.println("get message: Kafka");
         System.out.println(message);
+        System.out.println("test");
     }
     @KafkaListener(topics = "email-model", groupId = "demo-group")
     public void receiveEmail(String message) {

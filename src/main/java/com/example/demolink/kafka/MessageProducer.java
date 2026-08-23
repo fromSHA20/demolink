@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 public class MessageProducer {
     public MessageProducer(KafkaTemplate<String, String> kafkaTemplate) {
         this.kafkaTemplate = kafkaTemplate;
+        System.out.println();
     }
 
     private final KafkaTemplate<String, String> kafkaTemplate;
@@ -17,6 +18,7 @@ public class MessageProducer {
     public void sendTopic(String topic, String message) {
         this.kafkaTemplate.send(topic,message);
     }
+
 
 
 
