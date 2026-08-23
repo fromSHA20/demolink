@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class MessageController {
     private final MessageProducer messageProducer;
 
-
     public MessageController(MessageProducer messageProducer) {
         this.messageProducer = messageProducer;
     }
