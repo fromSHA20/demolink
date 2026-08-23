@@ -16,6 +16,7 @@ public class MessageConsumer {
     public void receiveEmail(String message) {
         System.out.println("get message: email-model");
         System.out.println(message);
+        System.out.println("123");
     }
 
 
