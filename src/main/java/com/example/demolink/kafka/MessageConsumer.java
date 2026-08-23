@@ -18,6 +18,11 @@ public class MessageConsumer {
         System.out.println(message);
         System.out.println(" исправил Ваш коммент ");
     }
+    @KafkaListener(topics = "TopicDZ", groupId = "dema-group")
+    public void receiveMessageDZ(String soobhenie){
+        System.out.println("get message: TopicDZ");
+        System.out.println(soobhenie);
+    }
 
 
 }

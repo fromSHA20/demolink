@@ -9,17 +9,14 @@ public class MessageProducer {
         this.kafkaTemplate = kafkaTemplate;
         System.out.println();
     }
-
     private final KafkaTemplate<String, String> kafkaTemplate;
 
     public void sendMessage(String message) {
         this.kafkaTemplate.send("messages", message);
     }
     public void sendTopic(String topic, String message) {
-        this.kafkaTemplate.send(topic,message);
+        this.kafkaTemplate.send(topic, message);
     }
-
-
 
 
 }

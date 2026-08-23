@@ -15,6 +15,10 @@ public class KafkaTopicKonfig {
     public NewTopic Topic2() {
         return TopicBuilder.name("email-model").partitions(1).replicas(1).build();
     }
+    @Bean
+    public NewTopic TopicDZ(){
+        return TopicBuilder.name("message_DZ").partitions(1).replicas(1).build();
+    }
 
 
 }
